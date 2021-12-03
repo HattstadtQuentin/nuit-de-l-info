@@ -26,14 +26,6 @@ FirestoreService.getMarkers().then(console.log("YEEEE"));
 
 class App extends Component {
 
-  constructor(props, context) { 
-    super(props, context);
- 
-    this.state = {
-       check: false
-    };
-    };
-
 
 
   render(){
@@ -55,14 +47,9 @@ class App extends Component {
                   <Route exact path="/index-station" component={IndexStation}/>
               </Switch>
           </main>
-          { this.check ? <div className="blackMode">
-          <BsFillMoonStarsFill /><button 
-          onClick={this.setState(({ check }) => ({ check: !check }))}/>
-          </div> : <div className="lightMode">
-          
-          <BsFillMoonStarsFill /><button 
-          onClick={this.setState(({ check }) => ({ check: !check }))}/> }
-          </div> }
+          <div className="blackMode">
+          <BsFillMoonStarsFill />
+          </div>
           
         </div>
       </Router>
