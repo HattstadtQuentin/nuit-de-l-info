@@ -3,6 +3,6 @@
     "react-router-dom": "^6.0.2"
   },
   "scripts": {
-    "start": "react-scripts start"
+    "start": "cd dunkerque && npm start"
   }
 }
